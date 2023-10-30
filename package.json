@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "start": "npm run serve",
+    "start": "npx http-server ./dist",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -14,6 +14,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "pinia": "^2.1.7",
     "serve": "^14.2.1",
     "vue": "^3.3.4",
